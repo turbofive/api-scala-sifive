@@ -114,8 +114,8 @@ def install_coursier(install_dir, jar=False):
         name = "cs-x86_64-apple-darwin"
         sha256 = "3ba4f90d912497cf57dfdcc340468cbbaa26a9bd3df3be369b4f118b16305f8b"
     elif platform == 'linux' and is_64bit and not jar:
-        name = "cs-x86_64-pc-linux"
-        sha256 = "81d72ee774f5261169c5919bbc7ff6cedd7a84b7271ecb4ee16b332d6f91a4a4"
+        name = "coursier"
+        sha256 = "bfd78431781f74ed95423521b3f45b6ebe2a92a4d844cd1d9a74cc0494bd5045"
     else:
         name = "coursier.jar"
         sha256 = "ba197aec96b104fb1f8775e23f01435b865d9af3d40a9ad097ea9dd5dfcf04d1"
