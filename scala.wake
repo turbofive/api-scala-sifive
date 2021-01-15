@@ -91,7 +91,7 @@ target ivyCacheJars Unit =
 
 # TODO This is kind of sketchy, are releases and maven2 sufficient?
 def stripIvyPathPrefix name =
-  extract `.*?/(?:releases|maven2)/(.*)` name | head
+  extract `.*?/(?:releases|maven2|public)/(.*)` name | head
 
 def ivyDepToCoursierCache (IvyDep org name rev) =
   def prefix = replace `\.` '/' org
